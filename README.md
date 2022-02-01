@@ -73,7 +73,7 @@ npm start
 
 ### Documentation of further Testing of various API(s)
 
-- #### Authentication
+- #### Authentication Routes
 
 Sign Up
 ```
@@ -103,6 +103,39 @@ Logout
 ```
 Endpoint: /api/logout
 Request Type: GET
+```
+
+- #### User Routes
+
+Get User Details
+```
+Endpoint: /api/user/<userId>
+Request Type: GET
+Header: {
+            Authorization: Bearer <Token obtained from Login>
+        }
+```
+
+Update User Details
+```
+Endpoint: /api/user/<userId>
+Request Type: PUT
+Header: {
+            Authorization: Bearer <Token obtained from Login>
+        }
+Body: {
+        lastName: "new",
+        email: "new.email@newmail.org"
+      }
+```
+
+Get User Purchases
+```
+Endpoint: /api/orders/user/<userId>
+Request Type: GET
+Header: {
+            Authorization: Bearer <Token obtained from Login>
+        }
 ```
 
 ## 🚀 Deployment <a name = "deployment"></a>
