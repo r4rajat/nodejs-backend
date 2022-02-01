@@ -29,6 +29,11 @@
 ## 🧐 About <a name = "about"></a>
 
 Backend for a sample E-Commerce Website developed using NodeJS, Express and MongoDB.
+Following functionalities are available for use.
+
+- Sign-up a new user
+- Login with email and password
+- Logout from portal
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
