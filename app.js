@@ -6,6 +6,7 @@ const cors = require("cors")
 require("dotenv").config();
 
 const authenticationRoutes = require("./routes/auth")
+const userRoutes = require("./routes/user")
 
 // DB Connection
 // noinspection JSVoidFunctionReturnValueUsed
@@ -29,7 +30,7 @@ app.use(cors())
 
 //Routes
 app.use("/api", authenticationRoutes)
-
+app.use("/api", userRoutes)
 
 const port = process.env.PORT || 8000
 
